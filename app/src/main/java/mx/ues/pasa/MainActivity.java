@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void IngresarHome(View view) {
-        String url = "https://api-pasa.dsoft-sonora.com/api/login?expediente="+ usuario.getText() + "&password=" + password.getText();
+        String url = "https://server/api/login?expediente="+ usuario.getText() + "&password=" + password.getText();
         Toast.makeText(getApplicationContext(), url, Toast.LENGTH_LONG).show();
         StringRequest stringRequest = new StringRequest(url, new Response.Listener<String>() {
             @Override

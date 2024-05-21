@@ -118,7 +118,7 @@ public class RegistroActivity extends AppCompatActivity {
                 "&nombre=" +Uri.encode(tNombre.getText().toString()) +
                 "&telefono=" +Uri.encode(tTelefono.getText().toString())+
                 "&correo=" +Uri.encode(tCorreo.getText().toString());
-        String url = "https://api-pasa.dsoft-sonora.com/api/register?"+datos;
+        String url = "https://server/api/register?"+datos;
 
         Log.i("TEST", url);
         StringRequest stringRequest = new StringRequest(url, new Response.Listener<String>() {
